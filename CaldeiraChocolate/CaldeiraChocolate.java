@@ -1,16 +1,16 @@
 public class CaldeiraChocolate{
-    public boolean vazia = true;
-    public boolean fervida = false;
+    public boolean vazia;
+    public boolean fervida;
     private static CaldeiraChocolate instancia;
 
-    private CaldeiraChocolate(boolean _vazia, boolean _fervida){
-        vazia = _vazia;
-        fervida = _fervida;     
+    private CaldeiraChocolate(){
+        vazia = true;
+        fervida = false;     
     }
 
-    public static CaldeiraChocolate getInstancia(boolean _vazia, boolean _fervida){
+    public static CaldeiraChocolate getInstancia(){
         if(instancia == null){
-            instancia = new CaldeiraChocolate(_vazia, _fervida);
+            instancia = new CaldeiraChocolate();
         }
         return instancia;
     }
