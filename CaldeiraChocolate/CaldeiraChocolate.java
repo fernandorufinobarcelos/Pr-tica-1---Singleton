@@ -24,17 +24,16 @@ public class CaldeiraChocolate{
         }
     }
     public void ferver(){
-        if (vazia == false){
+        if(fervida == true){
+            System.out.println("A mistura ja foi fervida!");
+        }
+        else if (vazia == false){
             System.out.println("A mistura está sendo fervida!");
             fervida = true;
         } 
         else if(vazia == true){
             System.out.println("A caldeira está vazia!");
         }
-        else{
-            System.out.println("A mistura ja foi fervida!");
-        }
-
     }
     public void drenar(){
         if (fervida == true){
@@ -42,10 +41,7 @@ public class CaldeiraChocolate{
             vazia = true;
             fervida = false;
             } 
-        else if(fervida == false){
-            System.out.println("A mistura não foi fervida!");
-        }
-        else{
+        else if(vazia == true){
             System.out.println("A caldeira está vazia!");
         }
     }
