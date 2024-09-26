@@ -31,17 +31,17 @@ public class CaldeiraChocolate{
             System.out.println("A mistura está sendo fervida!");
             fervida = true;
         } 
-        else if(vazia == true){
+        else{
             System.out.println("A caldeira está vazia!");
         }
     }
     public void drenar(){
         if (fervida == true){
-            System.out.println("A mistura está sendo drenada");
+            System.out.println("A mistura está sendo drenada!");
             vazia = true;
             fervida = false;
             } 
-        else if(vazia == true){
+        else{
             System.out.println("A caldeira está vazia!");
         }
     }
