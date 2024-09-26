@@ -5,6 +5,9 @@ public class teste{
         s1.encher();
         s2.encher();
         s2.ferver();
+        s1.ferver();
+        s1.drenar();
+        s2.drenar();
         System.out.println(s1 == s2);
     }
 }
